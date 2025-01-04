@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+
+    <!-- Floating Button -->
+    <ImageView
+        android:id="@+id/btnAddTime"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Add Time Button"
+        android:src="@drawable/add_time1" />
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:text="TODAY"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Task Section -->
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="215dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/tvToday"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/headerbkg"
+        android:text="13 DEC 24"
+        android:textColor="#333333"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Progress Task Section -->
+
+
+    <!-- Calendar View next to tvDate -->
+
+    <TextView
+        android:id="@+id/tvTaskProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-81dp"
+        android:layout_marginEnd="46dp"
+        android:text="0/6"
+        android:textColor="#8692f2"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/calendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_marginTop="20dp"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDoAnytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:text="DO ANYTIME"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <!-- Task Container -->
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDoAnytime"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="8dp" />
+
+    <!-- Time Display -->
+    <TextView
+        android:id="@+id/time_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskContainer"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Time Display"
+        android:textSize="14sp" />
+
+
+
+</RelativeLayout>

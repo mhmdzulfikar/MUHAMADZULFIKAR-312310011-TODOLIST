@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <!-- Gambar/Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/puwat" /> <!-- Ganti dengan logo aplikasi -->
+
+    <!-- Deskripsi Singkat Aplikasi -->
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pewat Pengingat Waktu membantu Anda mengatur pengingat untuk setiap kegiatan penting dalam hidup Anda."
+        android:textSize="16sp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/lavender"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:textAlignment="center" />
+
+    <!-- Info tentang pengembang -->
+    <TextView
+        android:id="@+id/dev_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dikembangkan oleh MUHAMAD ZULFIKAR"
+        android:textSize="14sp"
+        android:layout_below="@id/description_text"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <!-- Link atau tombol untuk kebijakan privasi -->
+    <TextView
+        android:id="@+id/privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kebijakan Privasi"
+        android:textSize="14sp"
+        android:textColor="@color/lavender"
+        android:layout_below="@id/dev_info"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 0.1"
+        android:textSize="20sp"
+        android:textColor="@color/lavender"
+        android:layout_below="@id/dev_info"
+    android:layout_marginTop="290dp"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center" />
+
+</RelativeLayout>
